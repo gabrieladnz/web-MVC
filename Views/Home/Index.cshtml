@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @foreach(var item in @ViewBag.listaClientes) {
+        <div>@item.Id</div>
+        <div>@item.Nome</div>
+        <div>@item.Cpf</div>
+    }
+
+        @foreach(var item in @ViewBag.listaFornecedores) {
+        <div>@item.Id</div>
+        <div>@item.Nome</div>
+        <div>@item.Cnpj</div>
+    }
+</div>
